@@ -41,5 +41,6 @@ export class BooksService {
       `https://669a42869ba098ed61fef725.mockapi.io/books/${id}`
     ).then((res) => res.json());
   }
+  editbook() {}
   constructor() {}
 }
