@@ -16,7 +16,7 @@ import { EventEmitter } from 'stream';
 })
 export class AllbooksComponent {
   constructor(private router: Router, private route: ActivatedRoute) {}
-  @Input() everybook!: Book;
+  @Input() everybook: any;
 
   @Input() id!: number;
   @Output() delete_the_book = new EventEmitter<any>();

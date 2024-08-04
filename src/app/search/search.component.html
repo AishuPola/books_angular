@@ -8,8 +8,8 @@
     />
   </mat-form-field>
 </div>
-<div class="all-recipes-container">
-  @for(book of filteredBooks; track $index) {
-  <app-allbooks [everybook]="book" [id]="book.id" />
+<div class="all-books-container">
+  @for(books of filteredBooks; track $index) {
+  <app-allbooks [everybook]="books" [id]="books.id" />
   }
 </div>
