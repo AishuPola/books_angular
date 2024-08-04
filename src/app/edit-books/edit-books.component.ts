@@ -89,9 +89,9 @@ export class EditBooksComponent {
     if (this.bookForm.valid) {
       let updatedbook: Book = this.bookForm.value;
 
-      // this.bookserive.editbook(updatedbook).then(() => {
-      //   this.router.navigate(['search']);
-      // });
+      this.bookserive.editbook(updatedbook).then(() => {
+        this.router.navigate(['search']);
+      });
     }
   }
   get title() {
