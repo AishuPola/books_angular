@@ -28,7 +28,6 @@ export class SearchComponent {
     this.booksservice.getBooks().then((data) => {
       this.books = data;
       this.filteredBooks = this.books;
-      console.log(this.filteredBooks);
     });
   }
   onSearch() {
