@@ -18,10 +18,9 @@ export class AllbooksComponent {
   @Input() everybook: any;
 
   @Input() id!: number;
+  @Output() delete_the_book = new EventEmitter<Book>();
 
-  @Output() delete_the_book = new EventEmitter<any>();
-
-  deleteRecipe() {
+  deletebook() {
     this.delete_the_book.emit(this.everybook);
   }
 }

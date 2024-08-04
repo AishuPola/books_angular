@@ -54,9 +54,7 @@ body {
     text-align: justify;
   }
   .wholecontainer {
-    // display: grid;
-    // grid-template-columns: 3fr 3fr 3fr 3fr;
-    // gap: 3rem;
+
     height: 625px;
     width: 350px;
   }
@@ -81,6 +79,8 @@ body {
   }
   .delete-button {
     padding-left: 10px;
+    padding-top: 20px;
+    cursor: pointer;
   }
   .cat_des_info {
     display: flex;
@@ -97,5 +97,9 @@ body {
   }
   p {
     margin: 8px;
+  }
+  .delete-and-status{
+    display:flex;
+    justify-content: space-between;
   }
   

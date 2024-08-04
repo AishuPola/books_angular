@@ -50,11 +50,14 @@
             </button>
           </div>
         </div>
-      </div>
 
-      <mat-icon class="delete-button" color="warn" (click)="deleteRecipe()"
-        >delete</mat-icon
-      >
+        <div class="delete-and-status">
+          <p>{{ everybook.status }}</p>
+          <mat-icon class="delete-button" color="warn" (click)="deletebook()"
+            >delete</mat-icon
+          >
+        </div>
+      </div>
     </mat-card>
   </body>
 </html>

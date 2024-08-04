@@ -4,6 +4,7 @@ import { SearchComponent } from './search/search.component';
 import { EditBooksComponent } from './edit-books/edit-books.component';
 import { AddbooksComponent } from './addbooks/addbooks.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { BookdetailsComponent } from './bookdetails/bookdetails.component';
 
 export const routes: Routes = [
   {
@@ -16,7 +17,7 @@ export const routes: Routes = [
   },
   {
     path: 'search/:id',
-    component: EditBooksComponent,
+    component: BookdetailsComponent,
   },
   {
     path: 'addbooks',
@@ -25,5 +26,9 @@ export const routes: Routes = [
   {
     path: '**',
     component: PagenotfoundComponent,
+  },
+  {
+    path: 'search/edit/:id',
+    component: EditBooksComponent,
   },
 ];
