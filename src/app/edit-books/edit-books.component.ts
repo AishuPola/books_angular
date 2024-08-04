@@ -84,7 +84,7 @@ export class EditBooksComponent {
       });
     });
   }
-  editrecipe() {
+  editbook() {
     // let id = this.route.snapshot.paramMap.get('id') as string;
     if (this.bookForm.valid) {
       let updatedbook: Book = this.bookForm.value;

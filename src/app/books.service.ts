@@ -41,6 +41,17 @@ export class BooksService {
       `https://669a42869ba098ed61fef725.mockapi.io/books/${id}`
     ).then((res) => res.json());
   }
-  editbook() {}
+  editbook(updatedbook: Book) {
+    console.log(updatedbook);
+
+    return fetch(`https://669a42869ba098ed61fef725.mockapi.io/books`, {
+      method: 'PUT',
+      body: JSON.stringify(updatedbook),
+      headers: {
+        'Content-type': 'application/json',
+      },
+    }).then((res) => res.json());
+  }
+
   constructor() {}
 }
