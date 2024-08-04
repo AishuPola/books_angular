@@ -3,7 +3,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { AllbooksComponent } from './allbooks/allbooks.component';
 
 export interface Book {
-  id: number;
+  id: string;
   title: string;
   author: string;
   category: string;
