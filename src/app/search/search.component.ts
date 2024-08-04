@@ -43,7 +43,7 @@ export class SearchComponent {
     );
   }
 
-  deleterecipe(book_to_be_deleted: Book) {
+  deletebook(book_to_be_deleted: Book) {
     this.booksservice
       .delete_the_book(book_to_be_deleted)
       .then(() => this.loadBooks());
