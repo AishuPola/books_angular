@@ -5,10 +5,12 @@ import { Book } from '../app.component';
 import { FormsModule } from '@angular/forms';
 import { AllbooksComponent } from '../allbooks/allbooks.component';
 
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 @Component({
   selector: 'app-search',
   standalone: true,
-  imports: [FormsModule, AllbooksComponent],
+  imports: [FormsModule, AllbooksComponent, MatFormFieldModule],
   templateUrl: './search.component.html',
   styleUrl: './search.component.scss',
 })
