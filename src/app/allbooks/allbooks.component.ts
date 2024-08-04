@@ -15,11 +15,7 @@ import { EventEmitter } from 'stream';
   styleUrl: './allbooks.component.scss',
 })
 export class AllbooksComponent {
-  constructor(
-    private router: Router,
-    private route: ActivatedRoute,
-    private booksservice: BooksService
-  ) {}
+  constructor(private router: Router, private route: ActivatedRoute) {}
   @Input() everybook!: Book;
 
   @Input() id!: number;

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { AllbooksComponent } from './allbooks/allbooks.component';
 
 export interface Book {
   id: number;
@@ -13,7 +14,7 @@ export interface Book {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink],
+  imports: [RouterOutlet, RouterLink, AllbooksComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

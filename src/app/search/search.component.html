@@ -1,6 +1,4 @@
-<!-- <p>search works!</p> -->
 <div class="mainclass">
-  <!-- <h2>Recipe Search</h2> -->
   <mat-form-field>
     <input
       matInput
@@ -9,7 +7,6 @@
       (input)="onSearch()"
     />
   </mat-form-field>
-  <!-- <app-allrecipes [everyrecipe]="filteredRecipes" /> -->
 </div>
 <div class="all-recipes-container">
   @for(book of filteredBooks; track $index) {
