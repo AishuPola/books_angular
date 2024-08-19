@@ -1,4 +1,4 @@
-<div class="mainclass">
+<!-- <div class="mainclass">
   <mat-form-field>
     <input
       matInput
@@ -6,8 +6,12 @@
       [(ngModel)]="searchTerm"
       (input)="onSearch()"
     />
-  </mat-form-field>
-</div>
+  </mat-form-field> -->
+<!-- </div> -->
+<form [formGroup]="searchForm">
+  <input placeholder="search..." formControlName="search" />
+</form>
+
 <div class="all-books-container">
   @for(books of filteredBooks; track $index) {
   <app-allbooks

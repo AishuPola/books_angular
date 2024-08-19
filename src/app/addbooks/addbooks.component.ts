@@ -7,9 +7,14 @@ import {
   Validators,
 } from '@angular/forms';
 
-import { MatError, MatFormField, MatLabel } from '@angular/material/form-field';
+import {
+  MatError,
+  MatFormField,
+  MatFormFieldControl,
+  MatLabel,
+} from '@angular/material/form-field';
 import { MatInput } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
+import { MatButtonModule, MatFabButton } from '@angular/material/button';
 
 import { Router } from '@angular/router';
 import { Book } from '../app.component';
@@ -33,6 +38,7 @@ import { NewBook } from '../book';
     MatOption,
     MatRadioGroup,
     MatRadioButton,
+    MatFabButton,
   ],
   templateUrl: './addbooks.component.html',
   styleUrl: './addbooks.component.scss',

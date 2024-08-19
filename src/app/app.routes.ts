@@ -23,12 +23,13 @@ export const routes: Routes = [
     path: 'addbooks',
     component: AddbooksComponent,
   },
-  {
-    path: '**',
-    component: PagenotfoundComponent,
-  },
+
   {
     path: 'search/edit/:id',
     component: EditBooksComponent,
+  },
+  {
+    path: '**',
+    component: PagenotfoundComponent,
   },
 ];

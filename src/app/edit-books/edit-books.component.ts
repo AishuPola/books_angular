@@ -7,7 +7,10 @@ import { NewBook } from '../book';
 import { Book } from '../app.component';
 import { UpperCasePipe } from '@angular/common';
 import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import {
+  MatFormFieldControl,
+  MatFormFieldModule,
+} from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import {
   MatOption,
